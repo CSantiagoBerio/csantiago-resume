@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from '../app.service';
+import { AuthService } from '../auth.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -7,15 +9,12 @@ import { AppService } from '../app.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  inside: Boolean = false;
+  inside: Observable<boolean>;
 
-  in() {
-    this.inside = this.log.goIn();
-  }
-
-  constructor(private log: AppService) { }
+  constructor(private log: AppService, private auth: AuthService) { }
 
   ngOnInit() {
+    this.inside = this.auth.isLoggedIn;
   }
 
 }

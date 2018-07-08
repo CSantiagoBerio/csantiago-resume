@@ -12,6 +12,7 @@ import { environment } from '../environments/environment';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ResumeViewComponent } from './resume-view/resume-view.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     AboutMeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ResumeViewComponent
   ],
   imports: [
     BrowserModule,

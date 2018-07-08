@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { StudentsService } from '../students.service';
 import { RecruiterService } from '../recruiter.service';
 import { VisitorService } from '../visitor.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-home',
@@ -28,12 +29,13 @@ export class HomeComponent implements OnInit {
   }
 
   visitor() {
-    this.visit.writeVisitor();
+    // this.visit.writeVisitor();
+    this.router.navigate(['/about-me']);
   }
 
 
   constructor(private router: Router, private fb: FormBuilder, private accept: StudentsService,
-     private recruit: RecruiterService, private visit: VisitorService) {
+     private recruit: RecruiterService, private visit: VisitorService, private auth: AuthService) {
   }
 
   ngOnInit() {
