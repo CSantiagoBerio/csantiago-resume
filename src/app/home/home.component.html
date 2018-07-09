@@ -1,90 +1,30 @@
 <div class="container">
-    <h2>Card Test</h2>
 
+  <div class="row">
 
-    <div class="row">
-      <div class="col s12 l6" style="width: 1280px">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Welcome</span>
-            <p>The information asked in the forms below is for keeping a record of who visits.
-                It is my desire to keep a record of how many people visit the website, who visits the website
-              and possibly when. If you feel unsafe or have doubts to whether or not submit the form please click the link below
-            Although, if you could be so kind to fill the form and submitted I will be grateful.<br>
-            {{ today | date: 'medium' }}
-          </p>
-          <h4>Dankeschon</h4>
-          <form>
-          </form>
-          <button class="btn grey darken-2 waves-effect waves-light" (click)="visitor()">Bypass Form</button>
-          </div>
+    <!-- Top Div container, helps centralize middle div container -->
+    <div class="col s4 l3">
+
+    </div>
+
+    <!-- Middle Div contianer, holds the content -->
+    <div class="col s4 l6" style="text-align: center;">
+      <div class="card s4 l6 grey darken-2">
+        <div class="card-content">
+          <img src="../../assets/avatar.png" class="image">
+          <span class="card-title">Christian Santiago</span>
+          <h3> Aspiring Web Designer</h3>
+          <h5> Eager to learn new web design technologies</h5>
+          <button class="btn waves-effect waves-light" style="background-color: #4365be;" (click)="visitor()">Learn More</button>
         </div>
       </div>
     </div>
 
+    <!-- Bottom Div container, helps centralize Middle Div-->
+    <div class="col s4 l3">
 
-    <div class="row">
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Students</span>
-            <form [formGroup]="studentForm" (ngSubmit)="students()">
-                <table>
-                  <tr>
-                    <td>
-                      <input type="text" class="input-field validate" placeholder="Name" formControlName="name">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="text" class="input-field validate" placeholder="Concentration/Bachelor" formControlName="bachelor">
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <i class="material-icons">email</i>
-                      <input type="email" class="input-field validate" placeholder="E-Mail" formControlName="email" style="text-indent: 32px">
-                      <span class="helper-text">Preferably UPR's email</span>
-                    </td>
-                  </tr>
-                </table>
-                <div class="card-action">
-                  <input type="submit" class="btn waves-effect green darken-3 waves-light" value="submit">
-                </div>
-              </form>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col s12 l6">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Recruiters</span>
-            <form [formGroup]="recruiterForm" (ngSubmit)="recruiter()">
-              <table>
-                <tr>
-                  <td>
-                    <input type="text" class="input-field validate" placeholder="Name" formControlName="name">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="text" class="input-field validate" placeholder="Company" formControlName="company">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <input type="email" class="input-field validate" placeholder="E-Mail" formControlName="email">
-                  </td>
-                </tr>
-              </table>
-              <div class="card-action">
-                <input type="submit" class="btn waves-effect yellow darken-2 waves-light" value="submit">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-  
     </div>
+
   </div>
+
+</div>

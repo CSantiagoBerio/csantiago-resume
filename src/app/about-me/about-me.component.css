@@ -1,0 +1,73 @@
+.card {
+    background-color: lightgrey;
+}
+
+.third {
+  margin-top: 33.3333333%;
+}
+
+.objective {
+  margin-top: 25%;
+}
+
+.progress-bars {
+    height: fit-content;
+}
+
+.skills-box {
+    width: 100%;
+    color: grey;
+    border-radius: 25%;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+.round-corners {
+    border-radius: 50px;
+}
+
+.html {
+  width: 45%;
+  background-color: darkgreen;
+}
+
+.css {
+  width: 35%;
+  background-color: royalblue;
+}
+
+.js {
+  width: 32%;
+  background-color: #f44336;
+}
+
+.angular {
+  width: 55%;
+  background-color: #808080;
+}
+
+.java {
+    width: 70%;
+    background-color: orange;
+}
+
+.sql {
+    width: 25%;
+    background-color: purple;
+}
+
+.learn {
+    width: 100%;
+    background-color: midnightblue;
+}
+
+.python {
+    width: 20%;
+    background-color: yellow;
+    color: black;
+}

@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Aclonica');
 /* CSS for navigation bar */
 
+.vertical-nav {
+  left: 0%;
+}
+
 .nav-logo {
   font-family: 'Aclonica', serif;
   font-size: medium;
@@ -32,20 +36,24 @@ ul li.mid1 {
 
 ul li.li1 {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
 }
 
 ul li.li2 {
   position: absolute;
-  bottom: 15%;
+  bottom: 20%;
 }
 
 ul li.li3 {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
 }
 
 ul li.li4 {
+  position: absolute;
+  bottom: 10%;
+}
+ul li.li5 {
   position: absolute;
   bottom: 5%;
 }
@@ -71,6 +79,11 @@ li a:hover:not(.active) {
 /*  Icons CSS*/
 
 .fas {
+  color: white;
+  font-size: 25px;
+}
+
+.fab {
   color: white;
   font-size: 25px;
 }
