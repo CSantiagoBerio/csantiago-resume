@@ -1,3 +1,115 @@
-* {
-    margin-left: 60px;
+.lower {
+  margin-top: 15%;
+}
+
+.container {
+  width: 50%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  color: black;
+}
+
+li a:hover:not(.active) {
+  background-color: #4365be;
+}
+
+a {
+  display: block;
+  font-size: 20px;
+  height: auto;
+  width: auto;
+  padding: 10px;
+  color: black;
+}
+
+li a.active {
+  background-color: #4365be;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #4365be;
+  float: right;
+  margin-right: -25px;
+}
+
+.fa-arrow-down {
+  font-size: 15px;
+  padding: 5px;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.collapse {
+  display: none;
+}
+
+.progress-bars {
+  height: fit-content;
+}
+
+.skills-box {
+  width: 100%;
+  color: grey;
+  border-radius: 25%;
+}
+
+.skills {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+.round-corners {
+  border-radius: 50px;
+}
+
+.html {
+  width: 45%;
+  background-color: darkgreen;
+}
+
+.css {
+  width: 35%;
+  background-color: royalblue;
+}
+
+.js {
+  width: 32%;
+  background-color: #f44336;
+}
+
+.angular {
+  width: 55%;
+  background-color: #808080;
+}
+
+.java {
+  width: 70%;
+  background-color: orange;
+}
+
+.sql {
+  width: 25%;
+  background-color: purple;
+}
+
+.learn {
+  width: 100%;
+  background-color: midnightblue;
+}
+
+.python {
+  width: 20%;
+  background-color: yellow;
+  color: black;
 }

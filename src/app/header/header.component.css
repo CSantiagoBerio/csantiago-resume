@@ -3,87 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Aclonica');
 /* CSS for navigation bar */
 
-.vertical-nav {
-  left: 0%;
+#myNav {
+  margin-top: -30px;
+  height: 25%;
+  background-color: #4365be;
+  position: static;
 }
 
-.nav-logo {
-  font-family: 'Aclonica', serif;
-  font-size: medium;
-  color: white;
+p {
+  padding: 2px;
+  line-height: 25px;
+  text-align: center;
 }
 
-.vertical {
-    text-orientation: upright;
-    writing-mode: vertical-rl;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-  height: 100%;
-  position: fixed;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-ul li.mid1 {
-  position: absolute;
-  bottom: 50%;
-}
-
-ul li.li1 {
-  position: absolute;
-  bottom: 25%;
-}
-
-ul li.li2 {
-  position: absolute;
-  bottom: 20%;
-}
-
-ul li.li3 {
-  position: absolute;
-  bottom: 15%;
-}
-
-ul li.li4 {
-  position: absolute;
-  bottom: 10%;
-}
-ul li.li5 {
-  position: absolute;
-  bottom: 5%;
-}
-
-li a {
-  display: block;
-  margin: 0px;
-  padding: 8px 16px;
-  width: auto;
-  text-decoration: none;
-}
-
-li a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-/*  Icons CSS*/
-
-.fas {
-  color: white;
-  font-size: 25px;
-}
-
-.fab {
-  color: white;
-  font-size: 25px;
+h3 {
+  text-align: center;
 }

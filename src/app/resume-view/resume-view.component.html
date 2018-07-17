@@ -1,4 +1,247 @@
+<div class="container">
+  <div>
+    <div class="row">
+      <div class="col s12 l12">
+        <div class="card">
+          <span class="card-title"><h3>Christian Santiago</h3></span>
+          <p>
+            <strong>address: </strong>Urb. Paseo Real 87 calle Regencia D15 Coamo, PR 00769
+            <br>
+            <strong>email: </strong>christian.santiago23@upr.edu
+            <strong>alt-email: </strong>c.santiagoberio@gmail.com
+            <br>
+            <strong>phone: </strong>787-638-7417
+            <br> US Citizenship
+          </p>
+        </div>
+      </div>
+    </div>
 
 
 
-<!-- <h1 style="color: white;">Hi Ya'll</h1> -->
+
+    <div class="row">
+
+      <!-- Menu Card-->
+      <div class="col s3 l3">
+        <div class="card">
+          <!-- <div class="card-content"> -->
+          <span class="card-title">Navigation Menu</span>
+          <div>
+            <ul id="myDiv">
+              <li>
+                <a class="tablinks" (click)="onClick('default', 'aboutMe', 'arrow0')" id="default">
+                  About-Me
+                  <span id="arrow0" class="arrow"></span>
+                </a>
+              </li>
+              <li>
+                <a id="item1" class="tablinks" (click)="onClick('item1', 'activities', 'arrow1')">
+                  Extracurricular Activities
+                  <span id="arrow1" class="arrow" style="margin-top: -15px;"></span>
+                </a>
+              </li>
+              <li>
+                <a id="item2" class="tablinks" (click)="onClick('item2', 'personal', 'arrow2')">
+                  Personal Projects
+                  <span id="arrow2" class="arrow"></span>
+                </a>
+              </li>
+              <li>
+                <a id="item3" class="tablinks" (click)="onClick('item3', 'codeskills', 'arrow3')">
+                  Coding Skill Progress
+                  <span id="arrow3" class="arrow"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+
+      <!-- Content Card-->
+      <div id="aboutMe" class="tabcontent">
+        <div class="col s9 l9">
+          <div class="card">
+            <!-- <div class="card-content"> -->
+            <span class="card-title"></span>
+            <div class="title grey darken-2">
+              <a (click)="uncollapse('objective')">Objective
+                <i class="fas fa-arrow-down"></i>
+              </a>
+            </div>
+            <div class="collapse" id="objective">
+              <p>Seeking an internship where I could develop my skills as a Computer Engineer, while exceeding the company’s
+                goals.
+              </p>
+            </div>
+
+            <div class="title grey darken-2">
+              <a (click)="uncollapse('education')">Education
+                <i class="fas fa-arrow-down"></i>
+              </a>
+            </div>
+            <div class="collapse" id="education">
+              <table>
+                <tr>
+                  <th>Universidad de Puerto Rico Mayagüez Campus</th>
+                  <th>EGD: June 2020</th>
+                </tr>
+                <tr>
+                  <td>
+                    • Bachelor’s in Science in Computer Engineering
+                    <br> • Expected Graduation Date: May 2020
+                    <br> • GPA 2.69/4.0
+
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="title grey darken-2">
+              <a (click)="uncollapse('experience')"> Experience
+                <i class="fas fa-arrow-down"></i>
+              </a>
+            </div>
+            <div class="collapse" id="experience">
+              <table>
+                <tr>
+                  <th>JEChat – Databases Class Project</th>
+                  <th>Feb 2018 – April 2018</th>
+                </tr>
+                <tr>
+                  <td style="padding: 25px;">
+                    • Developed a user-friendly web-app mimicking Whatsapp with a functioning Database using SQL in PostgresSQL
+                    <br> • Integrated RestApi using Python Flask for the communication of the WebApp and the database of the
+                    project.
+                    <br> • Accomplished completion of a full-stack web-app project within a timeline of 2 months with excellent
+                    results.
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>Operation Sahure/Pyramid Scheme - Class Project</th>
+                  <th>August 2017 – December 2017</th>
+                </tr>
+                <tr>
+                  <td style="padding: 25px;">
+                    • Implemented various data types like Trees, Maps, Hash Maps, Linked Lists, Hash Trees for simulated FBI investigation.
+                    <br> • Developed a program that related a pyramid scheme using various ADTs given in Data Structure class
+                    <br> • Implementing an imitation of an “FBI” investigation in which it will choose the path of a given number
+                    of arrests which would give the maximum/highest assets confiscated.
+                  </td>
+                </tr>
+              </table>
+              <table>
+                <tr>
+                  <th>Intern Summer Program
+                    <br>Roche Operations, Ponce PR</th>
+                  <th>June 2016- July 2016</th>
+                </tr>
+                <tr>
+                  <td style="padding: 25px;">
+                    • Identified and fixed errors in automated request forms, using Microsoft InfoPath and SharePoint Designer.
+                    <br> • Revised manufacturing procedures of blood glucose test strips and oversaw that the Standards Operating
+                    Procedures (S.O.P.) were followed adequately.
+                    <br> • Surpassed expectations of manager in Manufacturing Division with the exceptional results given.
+                    <br> • Updated Waste Disposal and Storage Chemicals Charts immediately after waste management organization
+                    were substituted
+
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Extracurricular Activites Card -->
+      <div id="activities" class="tabcontent">
+        <div class="col s9 l9">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Extracurricular Activities</span>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat at officia similique eos atque ab aut temporibus
+                quos cum, doloribus maiores est ea dolorem perspiciatis, odit accusamus, vero alias magni?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Projects Card-->
+      <div id="personal" class="tabcontent">
+        <div class="col s9 l9">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Personal Projects</span>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat at officia similique eos atque ab aut temporibus
+                quos cum, doloribus maiores est ea dolorem perspiciatis, odit accusamus, vero alias magni?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coding skills -->
+      <div id="codeskills" class="tabcontent">
+        <div class="col s9 l9">
+          <div class="card">
+            <div class="card-content" style="text-align: left;">
+              <span class="card-title">Coding Skills </span>
+              <p>HTML</p>
+              <div class="skills-box">
+                <div class="skills html round-corners">45%</div>
+              </div>
+
+              <p>CSS</p>
+              <div class="skills-box">
+                <div class="skills css round-corners">35%</div>
+              </div>
+
+              <p>JavaScript</p>
+              <div class="skills-box">
+                <div class="skills js round-corners">32%</div>
+              </div>
+
+              <p>Angular</p>
+              <div class="skills-box">
+                <div class="skills angular round-corners">55%</div>
+              </div>
+
+              <p>Java</p>
+              <div class="skills-box">
+                <div class="skills java round-corners">70%</div>
+              </div>
+
+              <p>Python</p>
+              <div class="skills-box">
+                <div class="skills python round-corners">20%</div>
+              </div>
+
+              <p>SQL</p>
+              <div class="skills-box">
+                <div class="skills sql round-corners">25%</div>
+              </div>
+
+              <p>Acknowledging I have much to learn</p>
+              <div class="skills-box">
+                <div class="skills learn round-corners">100%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $(".ul li").on("click", function () {
+    $(".ul li").removeClass("active");
+    $(this).addClass("active");
+  });
+
+</script>
