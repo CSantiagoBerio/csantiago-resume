@@ -32,13 +32,13 @@ export class ResumeViewComponent implements OnInit {
     tablinks = document.getElementsByClassName('tablinks');
     arrows = document.getElementsByClassName('arrow');
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = 'white';
+      tablinks[i].style.backgroundColor = '';
       arrows[i].style.display = 'none';
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(content).style.display = 'block';
-    document.getElementById(evt).style.backgroundColor = '#4365be';
+    document.getElementById(evt).style.backgroundColor = '#1565c0';
     document.getElementById(arrow).style.display = 'block';
 
   }

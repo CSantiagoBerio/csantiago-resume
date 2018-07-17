@@ -2,8 +2,10 @@
   <div>
     <div class="row">
       <div class="col s12 l12">
-        <div class="card">
-          <span class="card-title"><h3>Christian Santiago</h3></span>
+        <div class="card" style="background-color: lightgrey;">
+          <span class="card-title">
+            <h3>Christian Santiago</h3>
+          </span>
           <p>
             <strong>address: </strong>Urb. Paseo Real 87 calle Regencia D15 Coamo, PR 00769
             <br>
@@ -24,7 +26,7 @@
 
       <!-- Menu Card-->
       <div class="col s3 l3">
-        <div class="card">
+        <div class="card" style="background-color: lightgrey;">
           <!-- <div class="card-content"> -->
           <span class="card-title">Navigation Menu</span>
           <div>
@@ -62,10 +64,10 @@
       <!-- Content Card-->
       <div id="aboutMe" class="tabcontent">
         <div class="col s9 l9">
-          <div class="card">
+          <div class="card" style="background-color: lightgrey;">
             <!-- <div class="card-content"> -->
             <span class="card-title"></span>
-            <div class="title grey darken-2">
+            <div class="title">
               <a (click)="uncollapse('objective')">Objective
                 <i class="fas fa-arrow-down"></i>
               </a>
@@ -76,7 +78,7 @@
               </p>
             </div>
 
-            <div class="title grey darken-2">
+            <div class="title">
               <a (click)="uncollapse('education')">Education
                 <i class="fas fa-arrow-down"></i>
               </a>
@@ -98,7 +100,7 @@
               </table>
             </div>
 
-            <div class="title grey darken-2">
+            <div class="title">
               <a (click)="uncollapse('experience')"> Experience
                 <i class="fas fa-arrow-down"></i>
               </a>
@@ -147,7 +149,6 @@
                     <br> • Surpassed expectations of manager in Manufacturing Division with the exceptional results given.
                     <br> • Updated Waste Disposal and Storage Chemicals Charts immediately after waste management organization
                     were substituted
-
                   </td>
                 </tr>
               </table>
@@ -161,10 +162,46 @@
       <div id="activities" class="tabcontent">
         <div class="col s9 l9">
           <div class="card">
-            <div class="card-content">
+            <div class="card-content" style="background-color: lightgrey">
               <span class="card-title">Extracurricular Activities</span>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat at officia similique eos atque ab aut temporibus
-                quos cum, doloribus maiores est ea dolorem perspiciatis, odit accusamus, vero alias magni?</p>
+              <table>
+                <tr>
+                  <th>Undergraduate Research – RUMarino
+                    <br>Software Development Division</th>
+                  <th>February 2018 – Present</th>
+                </tr>
+                <tr>
+                  <td>
+                    • Familiarized with the Python code written by the team members in less than two weeks to be able to develop the code and
+                    understand the basic structure
+                    <br> • Designed and developed the autonomous architecture logic of the path mission in collaboration of 3
+                    teams using Python for the 2018 RoboSub competition in San Diego, California
+                    <br> • Maintained communication with the Vision team, Embedded Software team and other necessary divisions
+                    to properly achieve the task assigned.
+                  </td>
+                </tr>
+              </table>
+              <div class="card-action">
+                <h5>Info on RUMarino</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis impedit fugit earum culpa nulla laborum
+                  excepturi. Beatae quod autem vel dolorem cupiditate quasi libero non laboriosam ullam. Ipsa, maiores!</p>
+                <div class="links">
+                  <table>
+                    <tr>
+                      <td>
+                        <a>Link to main webpage</a>
+                      </td>
+                      <td>
+                        <a>Link to youtube page</a>
+                      </td>
+                      <td>
+                        <a href="">Link to Facebook page (maybe)</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <iframe width="600px" height="500px" src="https://www.youtube.com/embed/LSoIbhEem08" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -174,7 +211,7 @@
       <div id="personal" class="tabcontent">
         <div class="col s9 l9">
           <div class="card">
-            <div class="card-content">
+            <div class="card-content" style="background-color: lightgrey">
               <span class="card-title">Personal Projects</span>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat at officia similique eos atque ab aut temporibus
                 quos cum, doloribus maiores est ea dolorem perspiciatis, odit accusamus, vero alias magni?</p>
@@ -187,7 +224,7 @@
       <div id="codeskills" class="tabcontent">
         <div class="col s9 l9">
           <div class="card">
-            <div class="card-content" style="text-align: left;">
+            <div class="card-content" style="text-align: left; background-color: lightgrey">
               <span class="card-title">Coding Skills </span>
               <p>HTML</p>
               <div class="skills-box">
@@ -236,12 +273,3 @@
     </div>
   </div>
 </div>
-
-
-<script>
-  $(".ul li").on("click", function () {
-    $(".ul li").removeClass("active");
-    $(this).addClass("active");
-  });
-
-</script>

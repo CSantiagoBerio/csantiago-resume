@@ -5,6 +5,7 @@
 .container {
   width: 50%;
   text-align: center;
+  background-color: #424242;
 }
 
 ul {
@@ -13,7 +14,7 @@ ul {
 }
 
 li a:hover:not(.active) {
-  background-color: #4365be;
+  background-color: #1565c0;
 }
 
 a {
@@ -26,7 +27,7 @@ a {
 }
 
 li a.active {
-  background-color: #4365be;
+  background-color: #1565c0;
 }
 
 .arrow {
@@ -34,7 +35,7 @@ li a.active {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #4365be;
+  border-left: 15px solid #1565c0;
   float: right;
   margin-right: -25px;
 }
@@ -46,6 +47,7 @@ li a.active {
 
 .title {
   font-size: 25px;
+  background-color: #1565c0;
 }
 
 .collapse {
@@ -111,5 +113,10 @@ li a.active {
 .python {
   width: 20%;
   background-color: yellow;
+  color: black;
+}
+
+div.links a {
+  font-size: 15px;
   color: black;
 }
