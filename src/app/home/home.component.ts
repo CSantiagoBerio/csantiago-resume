@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   visitor() {
     // this.visit.writeVisitor();
     this.auth.login();
-    this.router.navigate(['/about-me']);
+    this.router.navigate(['/resume']);
   }
 
 

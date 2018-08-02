@@ -8,13 +8,13 @@
   background-color: #424242;
 }
 
-ul {
+ul#myDiv {
   list-style-type: none;
   color: black;
 }
 
 li a:hover:not(.active) {
-  background-color: #1565c0;
+  background-color: gray;
 }
 
 a {
@@ -47,7 +47,7 @@ li a.active {
 
 .title {
   font-size: 25px;
-  background-color: #1565c0;
+  background-color: gray;
 }
 
 .collapse {
@@ -112,11 +112,86 @@ li a.active {
 
 .python {
   width: 20%;
-  background-color: yellow;
-  color: black;
+  background-color: rgb(192, 165, 10);
 }
 
-div.links a {
-  font-size: 15px;
-  color: black;
+div.links ul {
+  list-style-type: none;
+  padding: 0;
 }
+
+div.links li {
+  display: inline-block;
+}
+
+#icon {
+  display: none;
+}
+
+#link-btn {
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: auto;
+    height: 100%;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 10px;
+  }
+  .tablinks {
+    font-size: 10px;
+  }
+  .arrow {
+    margin-top: -28px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  th {
+    font-size: 13px;
+  }
+  td {
+    font-size: 10px;
+    width: auto;
+  }
+  #icon {
+    display: block;
+    font-size: 25px;
+  }
+  #nav-object {
+    display: none;
+  }
+  #link-btn {
+    font-size: 25px;
+  }
+  iframe {
+    width: 150px;
+    height: 200px;
+  }
+
+  .skills {
+    line-height: 15px;
+    font-size: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}

@@ -4,7 +4,7 @@
       <div class="col s12 l12">
         <div class="card" style="background-color: lightgrey;">
           <span class="card-title">
-            <h3>Christian Santiago</h3>
+            <h3 id="name">Christian Santiago</h3>
           </span>
           <p>
             <strong>address: </strong>Urb. Paseo Real 87 calle Regencia D15 Coamo, PR 00769
@@ -28,30 +28,36 @@
       <div class="col s3 l3">
         <div class="card" style="background-color: lightgrey;">
           <!-- <div class="card-content"> -->
-          <span class="card-title">Navigation Menu</span>
+          <span class="card-title">
+            <i class="fas fa-ellipsis-h"></i>
+          </span>
           <div>
             <ul id="myDiv">
               <li>
                 <a class="tablinks" (click)="onClick('default', 'aboutMe', 'arrow0')" id="default">
-                  About-Me
+                  <span id="nav-object">About-Me</span>
+                  <i class="fas fa-user-circle" id="icon"></i>
                   <span id="arrow0" class="arrow"></span>
                 </a>
               </li>
               <li>
                 <a id="item1" class="tablinks" (click)="onClick('item1', 'activities', 'arrow1')">
-                  Extracurricular Activities
-                  <span id="arrow1" class="arrow" style="margin-top: -15px;"></span>
+                  <i class="fas fa-puzzle-piece" id="icon"></i>
+                  <span id="nav-object">Extracurricular Activities</span>
+                  <span id="arrow1" class="arrow"></span>
                 </a>
               </li>
               <li>
                 <a id="item2" class="tablinks" (click)="onClick('item2', 'personal', 'arrow2')">
-                  Personal Projects
+                  <i class="fas fa-project-diagram" id="icon"></i>
+                  <span id="nav-object">Personal Projects</span>
                   <span id="arrow2" class="arrow"></span>
                 </a>
               </li>
               <li>
                 <a id="item3" class="tablinks" (click)="onClick('item3', 'codeskills', 'arrow3')">
-                  Coding Skill Progress
+                  <i class="fas fa-code" id="icon"></i>
+                  <span id="nav-object">Coding Skill Progress</span>
                   <span id="arrow3" class="arrow"></span>
                 </a>
               </li>
@@ -112,7 +118,7 @@
                   <th>Feb 2018 – April 2018</th>
                 </tr>
                 <tr>
-                  <td style="padding: 25px;">
+                  <td colspan="2" style="padding: 25px;">
                     • Developed a user-friendly web-app mimicking Whatsapp with a functioning Database using SQL in PostgresSQL
                     <br> • Integrated RestApi using Python Flask for the communication of the WebApp and the database of the
                     project.
@@ -127,7 +133,7 @@
                   <th>August 2017 – December 2017</th>
                 </tr>
                 <tr>
-                  <td style="padding: 25px;">
+                  <td colspan="2" style="padding: 25px;">
                     • Implemented various data types like Trees, Maps, Hash Maps, Linked Lists, Hash Trees for simulated FBI investigation.
                     <br> • Developed a program that related a pyramid scheme using various ADTs given in Data Structure class
                     <br> • Implementing an imitation of an “FBI” investigation in which it will choose the path of a given number
@@ -142,7 +148,7 @@
                   <th>June 2016- July 2016</th>
                 </tr>
                 <tr>
-                  <td style="padding: 25px;">
+                  <td colspan="2" style="padding: 25px;">
                     • Identified and fixed errors in automated request forms, using Microsoft InfoPath and SharePoint Designer.
                     <br> • Revised manufacturing procedures of blood glucose test strips and oversaw that the Standards Operating
                     Procedures (S.O.P.) were followed adequately.
@@ -171,7 +177,7 @@
                   <th>February 2018 – Present</th>
                 </tr>
                 <tr>
-                  <td>
+                  <td colspan="2">
                     • Familiarized with the Python code written by the team members in less than two weeks to be able to develop the code and
                     understand the basic structure
                     <br> • Designed and developed the autonomous architecture logic of the path mission in collaboration of 3
@@ -183,23 +189,30 @@
               </table>
               <div class="card-action">
                 <h5>Info on RUMarino</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis impedit fugit earum culpa nulla laborum
-                  excepturi. Beatae quod autem vel dolorem cupiditate quasi libero non laboriosam ullam. Ipsa, maiores!</p>
-                <div class="links">
-                  <table>
-                    <tr>
-                      <td>
-                        <a>Link to main webpage</a>
-                      </td>
-                      <td>
-                        <a>Link to youtube page</a>
-                      </td>
-                      <td>
-                        <a href="">Link to Facebook page (maybe)</a>
-                      </td>
-                    </tr>
-                  </table>
-                  <iframe width="600px" height="500px" src="https://www.youtube.com/embed/LSoIbhEem08" frameborder="0" allowfullscreen></iframe>
+                <button class="btn wave-effect" (click)="uncollapse('rumarino'); less('rumarino')">{{btntext}}</button>
+                <div id="rumarino" class="collapse">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis impedit fugit earum culpa nulla laborum
+                    excepturi. Beatae quod autem vel dolorem cupiditate quasi libero non laboriosam ullam. Ipsa, maiores!</p>
+                  <div class="links">
+                    <ul>
+                      <li>
+                        <a id="link-btn">
+                          <i class="fab fa-facebook" style="color: #3B5998"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="link-btn">
+                          <i class="fab fa-youtube" style="color: #FF0000"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a id="link-btn" href="">
+                          <i></i>
+                        </a>
+                      </li>
+                    </ul>
+                    <iframe width="600px" height="500px" src="https://www.youtube.com/embed/LSoIbhEem08" frameborder="0" allowfullscreen></iframe>
+                  </div>
                 </div>
               </div>
             </div>
@@ -269,7 +282,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

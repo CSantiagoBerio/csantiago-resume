@@ -7,7 +7,7 @@ import { AuthGuard } from './auth.guard';
 import { ResumeViewComponent } from './resume-view/resume-view.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'about-me', component: AboutMeComponent, canActivate: [AuthGuard]},
   {path: 'resume', component: ResumeViewComponent}

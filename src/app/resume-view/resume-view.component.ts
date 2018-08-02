@@ -9,11 +9,14 @@ export class ResumeViewComponent implements OnInit {
 
   default: Document;
   show = false;
+  btntext: string;
+  titleText: string;
 
   constructor() { }
 
   ngOnInit() {
     document.getElementById('default').click();
+    this.less('rumarino');
   }
 
   onClick(evt, content, arrow) {
@@ -51,6 +54,19 @@ export class ResumeViewComponent implements OnInit {
       content.style.display = 'block';
     } else {
       content.style.display = 'none';
+    }
+  }
+
+  less(id) {
+    let content;
+    let btn;
+
+    btn = document.getElementById(btn);
+    content = document.getElementById(id);
+    if (content.style.display === 'none' || content.style.display === '') {
+      this.btntext = 'Show More';
+    } else {
+      this.btntext = 'Show Less';
     }
   }
 

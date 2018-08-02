@@ -11,6 +11,15 @@ ul {
     color: white;
 }
 
+.right li {
+    float: right;
+    display: block;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+
+}
+
 li {
     float: left;
 }
@@ -33,22 +42,33 @@ li a.active {
     color: white;
 }
 
-.item{
-    display: block;
-    padding: 10px;
-    color: white;
-    font-size: 15px;
-    height: auto;
-    right: 5%;
-    position: absolute;
+#mobile {
+    display: none;
 }
 
-.item1 {
-    display: block;
-    padding: 10px;
-    color: white;
-    font-size: 15px;
-    height: auto;
-    right: 0%;
-    position: absolute;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #mobile {
+        display: block;
+    }
+
+    #non-mobile {
+        display: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }
